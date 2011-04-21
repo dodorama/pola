@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Accessible Tabs Examples</title>
+	<meta name="author" content="Dirk Ginader">
+</head>
+<body>
+<h1>Accessible Tabs Examples</h1>
+<ul>
+    <li><a href="simple.html">Simple Example</a></li>
+    <li><a href="yaml.html">Example in a YAML Environment</a></li>
+    <li><a href="no-animation.html">Example without Animations</a></li>
+    <li><a href="open-tab-from-link.html">Opening a Tab from a link in the page (via index)</a></li>
+    <li><a href="open-tab-from-link-2.html">Opening a Tab from a link in the page (via selector)</a></li>
+    <li><a href="randomtab.html">Example showing a random tab every reload</a></li>
+    <li><a href="synchedheights.html">Syncing the height of the tabs to the highest to avoid jumping layouts</a></li>
+    <li><a href="simple-linked-tab.html#tab1">Direct link into a tab widget to show the first tab</a></li>
+    <li><a href="simple-linked-tab.html#tab2">Direct link into a tab widget to show the second tab</a></li>
+    <li><a href="simple-linked-tab.html#tab3">Direct link into a tab widget to show the third tab</a></li>
+    <li><a href="save-state.html">Example saving it's selected state in a cookie (select and reload)</a></li>
+    <li><a href="simple-pagination.html">Example showing how to paginate between tabs</a></li>
+    <li><a href="simple-underneath.html">Example showing how to display the tabs underneath the tab-content</a></li>
+</ul>
+<p>you can overwrite each of the following settings in the initialization call. Every single one is optional.</p>
+<pre><code>&lt;script&gt;
+    $(document).ready(function(){
+        $(".tabs").accessibleTabs({
+            wrapperClass: 'content', // Classname to apply to the div that is wrapped around the original Markup
+            currentClass: 'current', // Classname to apply to the LI of the selected Tab
+            tabhead: 'h4', // Tag or valid Query Selector of the Elements to Transform the Tabs-Navigation from (originals are removed)
+            tabheadClass: 'tabhead', // Classname to apply to the target heading element for each tab div
+            tabbody: '.tabbody', // Tag or valid Query Selector of the Elements to be treated as the Tab Body
+            fx:'show', // can be "fadeIn", "slideDown", "show"
+            fxspeed: 'normal', // speed (String|Number): "slow", "normal", or "fast") or the number of milliseconds to run the animation
+            currentInfoText: 'current tab: ', // text to indicate for screenreaders which tab is the current one
+            currentInfoPosition: 'prepend', // Definition where to insert the Info Text. Can be either "prepend" or "append"
+            currentInfoClass: 'current-info', // Class to apply to the span wrapping the CurrentInfoText
+            tabsListClass:'tabs-list', // Class to apply to the generated list of tabs above the content
+            syncheights:false, // syncs the heights of the tab contents when the SyncHeight plugin is available http://blog.ginader.de/dev/jquery/syncheight/index.php
+            syncHeightMethodName:'syncHeight', // set the Method name of the plugin you want to use to sync the tab contents. Defaults to the SyncHeight plugin: http://github.com/ginader/syncHeight
+            cssClassAvailable:false, // Enable individual css classes for tabs. Gets the appropriate class name of a tabhead element and apply it to the tab list element. Boolean value
+            saveState:false, // save the selected tab into a cookie so it stays selected after a reload. This requires that the wrapping div needs to have an ID (so we know which tab we're saving)
+            autoAnchor:false, // will move over any existing id of a headline in tabs markup so it can be linked to it
+            pagination:false, // adds buttons to each tab to switch to the next/previous tab
+            position:'top' // can be 'top' or 'bottom'. Defines where the tabs list is inserted. 
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+<p class="about">Want to learn more about this? <a href="http://blog.ginader.de/archives/2009/02/07/jQuery-Accessible-Tabs-How-to-make-tabs-REALLY-accessible.php">jQuery Accessible Tabs - How to make tabs REALLY accessible</a></p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-299719-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

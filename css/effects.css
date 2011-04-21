@@ -1,0 +1,53 @@
+/* @override 
+	http://localhost:8888/alice/sites/all/themes/alice/css/effects.css?ljmsx4
+	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/effects.css?lk0q7b
+*/
+
+#images {
+  position: relative;
+  }
+
+#images ul.tabs-list {
+  margin:0;
+  padding:0;
+  list-style:none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  }
+#images ul.tabs-list li {
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+  }
+#images ul.tabs-list a {
+  display: block;
+  float: left;
+  margin-right:5px;
+  line-height: 1em;
+  padding: 6px 8px;
+  background-color: #000;
+  background-color: rgba(0,0,0,1);
+  font-size: 10px;
+  color: #fff;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+
+#images ul.tabs-list a:hover {
+  color: #ffcc33;
+}
+
+#images ul.tabs-list li.current a {
+  color: #999;
+  }
+
+  .js #images .current-info,
+  .js #images .accessibletabsanchor,
+  .js #images .tabhead /*position each individual tab's heading (default class .tabhead) off-screen*/ {
+      position:absolute;
+      left:-999em;
+  }

@@ -1,0 +1,388 @@
+/* @override 
+	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0nwu
+	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0oyc
+	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0q7b
+	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0rac
+*/
+
+/*
+Title:      Helvis master screen styles
+Author:     Paolo Agostinelli
+Email:      p.agostinelli@gmail.com
+Web:        www.dodorama.com
+Copyright:  2011, Paolo Agostinelli.  All rights reserved (please don't re-use without permission).
+*/
+
+
+
+/* Helvis */
+
+
+
+body {
+  background-color: #fff;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  background-image: url(images/bg.jpg);
+}
+
+
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+  color: #d8461b;
+}
+
+a.active,
+a:active {
+  color: #000;
+}
+
+li a.active {
+  color: #000;
+}
+
+/* Header */
+
+#header {
+  margin-bottom: 3em;
+  background-color: #000;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Terminal Dosis Light", Verdana, sans-serif;
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.2) ;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#header #site-name {
+  display: inline;
+  float: left;
+  font-size: 1.125em;
+  line-height: 2em;
+  margin: 0 10px;
+}
+
+#header #site-name a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+#header #site-name a:hover {
+  color: #ffcc33;
+}
+
+#header h2 {
+  display: none;
+}
+
+#header #nav {
+  float: right;
+}
+
+#header ul#main-menu {
+  float: left;
+  margin: 0 10px;
+}
+
+#header ul#main-menu li,
+#header ul#main-menu li a {
+  float: left;
+}
+
+#header ul#main-menu li a {
+  line-height: 2.25em;
+  display: block;
+  padding: 0 10px;
+  font-size: 1em;
+  color: #fff;
+  color: #fff;
+}
+
+#header ul#main-menu li a:hover {
+  color: #ffcc33;
+}
+
+
+/* Page Title */
+
+#page-title {
+  font-family: "Terminal Dosis Light", Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Projects View */
+
+.view-projects ul li img{
+  width: 200px;
+  padding: 10px;
+  background-color: #fafafa;
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.2) ;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.view-projects ul li a{
+  font-size: 1.125em;
+  font-family: "Terminal Dosis Light", Verdana, sans-serif;
+}
+
+/* Project Node */
+
+.node-project {
+
+}
+
+.node-project #project-data {
+
+}
+
+.node-project #images{
+  
+}
+
+.node-project #images img{
+  width: 680px;
+  padding: 10px;
+  background-color: #fff;
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.2) ;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.node-project h2 {
+  font-size: 1.5em;
+  font-family: "Terminal Dosis Light", Verdana, sans-serif;
+
+}
+
+.node-project .field-name-field-project-subtitle {
+  font-style: italic;
+  line-height: 2em;
+  font-size: 0.75em;
+}
+
+.node-project .field-name-field-project-description {
+  font: 0.75em/2em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.node-project .field-name-field-project-file {
+  font-size: 0.75em;
+  margin-top: 1em;
+}
+
+.node-project .field-name-field-project-category{
+  font-size: 0.75em;
+  color: #666;
+}
+
+.node-project .field-name-field-project-date {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* Pager */
+
+ul.flippy li a{
+  text-transform: uppercase;
+  font: bold 0.625em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  line-height: 3em;
+}
+
+/* Tabs */
+
+ul.tabs {
+
+}
+
+ul.tabs li {
+  display: inline; 
+}
+
+ul.tabs li a {
+  background-color: transparent;
+  line-height: 36px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+ul.tabs li a.active,
+ul.tabs li a:hover {
+  color: #999;
+}
+
+/* Messages */
+
+div.messages{
+  background-color:#f8f8f8;
+  margin: 0 0 1em 0;
+  padding: 1em 10px;
+  border: 1px solid #ccc;
+  font-size: 0.75em;
+}
+
+table tr.warning th,
+div.warning {
+  color:#a84;
+  background-color:#fff4c0;
+  background-image: none;
+  }
+
+table tr.error th,
+div.error {
+  color: #995655;
+  background-color: #fff1ef;
+  background-image: none;
+}
+
+table tr.ok th,
+table tr.info th,
+div.status {
+  color:#687;
+  background-color:#ecf8f4;
+  background-image: none;
+  }
+
+  div.error   { border-color:#ffd4d0; }
+  div.warning { border-color:#ffe4b0; }
+  div.status  { border-color:#dce8e4; }
+  div.messages ul {
+  margin: 0 0 0 6px; /* LTR */
+  padding: 0;
+}
+
+
+
+/* Form Elements */
+
+form {
+  width: 380px;
+}
+
+input.form-text,
+textarea.form-textarea {                                      
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  outline: none;
+  color: #444;
+  background-color: #feffff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #d5d5d5;
+}
+/*input#edit-title.form-text {                                      
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+}*/
+.resizable-textarea textarea.form-textarea {                                      
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.resizable-textarea .grippie {                                      
+  height: 12px;
+  border-style: none;
+  background-position: center 4px;
+  background-color: #e8e7e7;
+}
+html.js input.form-autocomplete {
+  background-repeat: no-repeat;
+  background-position: 100% 6px; /* LTR */
+}
+div.form-item label,
+div.form-item label.option{
+  letter-spacing: 1px;
+  color: #000;
+  font-size: 0.75em;
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+fieldset {
+  position: relative;
+  border-style: none;
+  border: 4px solid #eef1f4;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+fieldset legend {
+  color: #d2dbe5;
+}
+
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  background-color: #ffe5e1;
+  border-style: none;
+}
+
+input.form-submit,
+a.button {
+  background-color: #000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333',endColorstr='#000');
+  background: -webkit-gradient(linear,left top,left bottom,from(#333),to(#000));
+  background: -moz-linear-gradient(top,#333,#000);
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin-right: 12px; /* LTR */
+  padding: 0 16px;
+  -khtml-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border-style: none;
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,.25);
+  box-shadow: 0 0 4px rgba(0,0,0,.25);
+}
+input.form-submit:active,
+a.button:active {
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,0);
+  box-shadow: 0 0 4px rgba(0,0,0,0);
+}
+input.form-submit:hover,
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:focus {
+  text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333',endColorstr='#000');
+  background: -webkit-gradient(linear,left top,left bottom,from(#333),to(#000));
+  background: -moz-linear-gradient(top,#333,#000);
+  text-shadow: 0px 1px 4px rgba(255,255,255,1);
+}
+

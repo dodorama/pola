@@ -1,0 +1,27 @@
+name = Pola
+description = Polaroid inspired theme for Drupal.
+screenshot  = images/screenshot.png
+engine = phptemplate
+core = 7.x
+base theme = wire
+
+stylesheets[all][] = css/pola.css
+
+# features[] = logo
+features[] = name
+# features[] = slogan
+# features[] = node_user_picture
+# features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+# features[] = secondary_menu
+
+# regions[sidebar_second] = Second sidebar
+# regions[help] = Help
+# regions[highlighted] = Highlighted
+# regions[header] = Header
+regions[content] = Content
+regions[sidebar_first]  = First sidebar
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 1
