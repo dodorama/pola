@@ -1,10 +1,3 @@
-/* @override 
-	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0nwu
-	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0oyc
-	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0q7b
-	http://localhost:8888/wireframe/profiles/wireframe/themes/pola/css/pola.css?lk0rac
-*/
-
 /*
 Title:      Helvis master screen styles
 Author:     Paolo Agostinelli
@@ -124,8 +117,12 @@ li a.active {
 /* Projects View */
 
 .view-projects ul li img{
-  width: 200px;
+  width: 100%;
+}
+
+.view-projects ul li a{
   padding: 10px;
+  width: 200px;
   background-color: #fafafa;
   -o-box-shadow: 0 1px 3px rgba(0,0,0,0.2) ;
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
@@ -133,7 +130,14 @@ li a.active {
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-.view-projects ul li a{
+.view-projects ul li a:hover{
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.2) ;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.view-projects ul li .project-title{
   font-size: 1.125em;
   font-family: "Terminal Dosis Light", Verdana, sans-serif;
 }
@@ -149,17 +153,17 @@ li a.active {
 }
 
 .node-project #images{
-  
-}
-
-.node-project #images img{
-  width: 680px;
   padding: 10px;
   background-color: #fff;
   -o-box-shadow: 0 1px 3px rgba(0,0,0,0.2) ;
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.node-project #images img{
+  width: 100%;
+  
 }
 
 .node-project h2 {
@@ -271,7 +275,7 @@ div.status {
 /* Form Elements */
 
 form {
-  width: 380px;
+  margin: 0 auto;
 }
 
 input.form-text,
