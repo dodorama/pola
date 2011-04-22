@@ -4,8 +4,7 @@ $().ready(function() {
       tabhead:'h3',
       tabbody: 'img',
       fx:"fadeIn",
-      fxspeed:'slow',
-      syncheights:true
+      fxspeed:'slow'
   });
 });
 })(jQuery);
